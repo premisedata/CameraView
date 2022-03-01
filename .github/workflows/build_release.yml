@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
 jobs:
   ANDROID_BUILD_AND_PUBLISH:
     name: Build Release and Publish
