@@ -27,6 +27,9 @@ fun Project.getStringProperty(propertyName: String): String? {
     return if(property is String) property else null
 }
 
+group = "com.otaliastudios.cameraview"
+version = getStringProperty("libraryVersion") ?: "unspecified"
+
 publishing {
     publications {
         register<MavenPublication>("apkRelease") {
