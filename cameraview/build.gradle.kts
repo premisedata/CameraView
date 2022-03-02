@@ -53,7 +53,7 @@ artifactory {
         defaults {
             publications("apkRelease")
             setPublishArtifacts(true)
-            setPublishPom(false)
+            setPublishPom(true)
         }
     }
 }
