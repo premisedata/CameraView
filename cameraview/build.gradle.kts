@@ -32,7 +32,7 @@ version = getStringProperty("libraryVersion") ?: "unspecified"
 
 publishing {
     publications {
-        register<MavenPublication>("apkRelease") {
+        register<MavenPublication>("aarRelease") {
             groupId = getStringProperty("groupId")
             version = getStringProperty("libraryVersion")
             artifactId = getStringProperty("artifactId")
@@ -51,7 +51,7 @@ artifactory {
         }
 
         defaults {
-            publications("apkRelease")
+            publications("aarRelease")
             setPublishArtifacts(true)
             setPublishPom(true)
         }
